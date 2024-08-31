@@ -1,0 +1,47 @@
+@import "components/color";
+@import "mixin";
+@import "base/reset";
+@import "base/variables";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/headers";
+@import "layout/grid";
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+$theme-colors: (
+  "primary": #3498db,
+  "secondary": #2ecc71,
+  "danger": #e74c3c,
+);
+
+.button-primary {
+  background-color: map-get($map: $theme-colors, $key: primary);
+  color: #fff;
+}
+
+@function calculate-rem($size) {
+  @return calc($size/ 16px) * 1rem;
+}
+
+body {
+  font-size: calculate-rem(16px);
+}
