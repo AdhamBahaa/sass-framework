@@ -1,0 +1,36 @@
+// $sizes: 5;
+
+// h3 {
+//   p {
+//     color: aqua;
+//   }
+// }
+
+// div {
+//   margin: auto;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// .message {
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   color: #333;
+// }
+
+// .sucess {
+//   @extend .message;
+//   border-color: green;
+// }
+
+// .error {
+//   @extend .message;
+//   border-color: red;
+// }
+
+// @each $size in $sizes {
+//   .icon-#{$size} {
+//     font-size: if($size==small, 10px, if($size==medium, 20px, 30px));
+//   }
+// }

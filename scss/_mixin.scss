@@ -1,0 +1,21 @@
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//   -moz-border-radius: $radius;
+//   border-radius: $radius;
+// }
+
+// .box {
+//   @include border-radius(10px);
+// }
+
+
+
+// h1 {
+//   font-size: calculate-rem(32px);
+// }
+
+// @for $i from 1 through 5 {
+//   .col-#{$i} {
+//     width: calc(100% / 5) * $i;
+//   }
+// }
